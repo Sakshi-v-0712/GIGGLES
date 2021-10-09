@@ -1,0 +1,859 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+input,
+textarea {
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1509017174183-0b7e0278f1ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
+    background-position: left;
+    background-size: cover;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 77px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+}
+
+h7 {
+    margin-left: 0px;
+    margin-right: 800px;
+}
+
+#logo {
+    width: 40px;
+}
+
+.menu-item {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.dropdown-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-wrapper:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    width: 150px;
+    border-top: 2px solid #265854;
+    padding: 20px;
+    position: absolute;
+    right: 24px;
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    display: none;
+}
+
+.dropdown a {
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.dropdown a:last-of-type {
+    border: 0;
+}
+
+.menu-item i {
+    padding-left: 4px;
+}
+
+.primary-button {
+    font-size: 13px;
+    font-weight: 650;
+    color: white;
+    background-color: rgb(13, 64, 68);
+    padding: 10px 35px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#landing-section {
+    width: 100%;
+    height: 100vh;
+}
+
+#main-text-wrapper {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-text-wrapper h1 {
+    width: 92%;
+    max-width: 1100px;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+}
+
+#main-text-wrapper p {
+    width: 100%;
+    max-width: 1100px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: rgb(241, 245, 248);
+    text-align: center;
+    padding-top: 32px;
+}
+
+
+/* STEPS SECTION STYLES START */
+
+#steps-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.step-item {
+    width: 25%;
+    padding: 112px 48px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.step-item i {
+    font-size: 96px;
+    transition: all 0.3s;
+}
+
+.step-item:hover i {
+    transform: scale(1.1, 1.1);
+}
+
+.step-item h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.step-item p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+#first-step {
+    background-color: #0f7bb9;
+}
+
+#second-step {
+    background-color: #4167ac;
+}
+
+#third-step {
+    background-color: #4589b1;
+}
+
+#fourth-step {
+    background-color: #3c837d;
+}
+
+
+/* STEPS SECTION STYLES END */
+
+
+/* o SECTION STYLES START */
+
+#o-section {
+    width: 100%;
+    background-color: #ccd3d8;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+#o-heading {
+    color: #005345;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+#o-section>h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+#o-desc {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin-bottom: 55px;
+}
+
+#o-items-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: stretch;
+    margin: 0 auto;
+}
+
+.o-wrapper {
+    display: inline-block;
+    background-color: #265854;
+    border-radius: 50%;
+    padding: 40px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.o-wrapper i {
+    font-size: 60px;
+}
+
+.o-item:hover .icon-wrapper {
+    transform: scale(1.1, 1.1);
+}
+
+
+/*o SECTION STYLES ENDS */
+
+
+/* REVIEWS SECTION STYLES START */
+
+#review-section {
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+#review-heading {
+    color: #155c47;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+#review-section>h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+#review-desc {
+    max-width: 700px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 auto;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin-bottom: 55px;
+}
+
+#review-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.review-item {
+    width: 25%;
+    text-align: center;
+    background-color: #f5f6fb;
+    padding: 40px 30px;
+    margin: 16px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: box-shadow 0.3s;
+}
+
+.review-item:hover {
+    box-shadow: 0 12px 16px 0 rgba(39, 39, 47, 0.06);
+}
+
+.review-item img {
+    width: 80px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+
+.review-message {
+    font-size: 14px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+}
+
+.review-item h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+
+.year-role {
+    color: #8b8b99;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+
+/* REVIEWS SECTION STYLES END */
+
+
+/* APPLY SECTION STYLES START */
+
+#apply-section {
+    display: flex;
+    justify-content: stretch;
+}
+
+#left-section {
+    width: 67%;
+    display: inline-block;
+    margin: 0;
+}
+
+#left-section img {
+    width: 100%;
+}
+
+#right-section {
+    width: 33.33%;
+    margin: 0;
+    display: inline-block;
+    background-image: url('https://images.unsplash.com/photo-1496317899792-9d7dbcd928a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+    background-position: left;
+    background-size: cover;
+}
+
+#right-section #text-wrapper {
+    margin: 115px;
+}
+
+#right-section #text-wrapper h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+#right-section #text-wrapper p {
+    color: #8b8b99;
+    font-size: 16px;
+    letter-spacing: 0.5;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#apply-email {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: white;
+    padding: 12px;
+    color: #8b8b99;
+    font-size: 16px;
+    margin-top: 60px;
+    display: block;
+}
+
+#apply-btn {
+    background-color: #1abcc2;
+    padding: 16px 42px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+
+#apply-btn:hover {
+    color: #2981a3;
+    border: 1px solid #338bbe;
+    background-color: transparent;
+}
+
+
+/* FOLLOW US SECTION STYLES END */
+
+
+/* STATS SECTION STYLES START */
+
+#stats-section {
+    width: 100%;
+    background-color: #f6fcfa;
+}
+
+#stats-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: stretch;
+}
+
+.stats-item {
+    width: 25%;
+    padding: 0 64px;
+}
+
+.stats-item h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.stats-item p {
+    color: #30886a;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+}
+
+
+/* STATS SECTION STYLES END */
+
+#line-separator {
+    width: 96px;
+    display: inline-block;
+    height: 1px;
+    background-color: #235f50;
+    margin-bottom: 36px;
+}
+
+
+/* ADDRESS SECTION STYLES START */
+
+#address-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+#address-wrapper>div {
+    width: 50%;
+}
+
+#address-wrapper>div:last-of-type {
+    width: 40%;
+}
+
+.green-heading {
+    color: #246d61;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.section-heading {
+    font-size: 600;
+    font-size: 44px;
+    margin: 0;
+}
+
+.section-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+
+.address-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 32px;
+}
+
+.address-lines {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    line-height: 2;
+    margin: 0;
+}
+
+.input-box {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    color: #8b8b99;
+    border-radius: 6px;
+    border: 1px solid #e5e6ec;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+#btn-submit {
+    font-size: 16px;
+}
+
+
+/* ADDRESS SECTION STYLES END */
+
+
+/* FOOTER SECTION STYLES START */
+
+footer {
+    background-color: #232323;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+
+/* FOOTER SECTION STYLES END */
+
+@media (max-width: 900px) {
+    .menu-item {
+        display: none;
+    }
+    .primary-button {
+        margin-right: 0
+    }
+    #main-text-wrapper>h1 {
+        font-size: 28px;
+    }
+    #main-text-wrapper>p {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    #steps-section {
+        width: 100%;
+        flex-direction: column;
+    }
+    .step-item {
+        width: 100%;
+    }
+    #store-section {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    #storee-section h3 {
+        font-size: 28px;
+    }
+    #store-items-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .store-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #testimonials-section {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    #testimonials-section>h3 {
+        font-size: 28px;
+    }
+    #testimonials-wrapper {
+        flex-direction: column;
+    }
+    .testimonial-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .testimonial-by {
+        font-size: important 18px;
+    }
+    #follow-section {
+        flex-direction: column;
+    }
+    #right-section #text-wrapper {
+        margin: 16px;
+    }
+    #right-section #text-wrapper h3 {
+        font-size: 28px;
+    }
+    #left-section {
+        width: 100%;
+    }
+    #right-section {
+        width: 100%;
+    }
+    #stats-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #stats-item {
+        width: 100%;
+    }
+    #address-wrapper {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 16px;
+        padding-top: 0;
+        box-sizing: border-box;
+    }
+    #address-wrapper>div {
+        width: 100%;
+    }
+    #address-wrapper>div:last-of-type {
+        width: 100%;
+    }
+}
+
+
+/** CHATBOT **/
+
+.chat-bar-collapsible {
+    /* to fix it at bottom of page */
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.collapsible {
+    /* open the chatbot section */
+    background-color: #155f64;
+    color: white;
+    cursor: pointer;
+    /* so that user knows its clickable */
+    padding: 18px;
+    width: 350px;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px 10px 0px 0px;
+    border: 3px solid white;
+    border-bottom: none;
+}
+
+.content {
+    max-height: 0;
+    /* so that chatbot stays down until clicked on */
+    overflow: hidden;
+    /* Chatbot is hidden under the topic */
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.full-chat-block {
+    /* to show all elements inside chatblock once clicked */
+    width: 350px;
+    background: white;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    height: max-content;
+    transition: max-height 0.2s ease-out;
+}
+
+.outer-container {
+    /* so that chatbot has a minimal height and does not shrink.
+    EX- if only one message is entered in the chatblock it will still not collapse until closed specificaly  */
+    min-height: 500px;
+    bottom: 0%;
+    position: relative;
+}
+
+.chat-container {
+    /* so that the chat container only stays to a maximum height 
+    and does not take up the whole page .
+    also to get the scrolling behavior in the chat. */
+    max-height: 500px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    hyphens: auto;
+}
+
+.chat-container::-webkit-scrollbar {
+    /* pseudo element : for the scroll bar 
+    (to make sure that it remains hidden inside the chatbox)*/
+    display: none;
+}
+
+.chat-bar-input-block {
+    /* for the input section */
+    display: flex;
+    /* so that all items inside are venly distributed */
+    float: left;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+.chat-bar-icons {
+    /* for the icons in input section */
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    font-size: 20px;
+}
+
+#chat-icon:hover {
+    /* to highlight input icons */
+    opacity: .7;
+}
+
+
+/* Chat bubbles */
+
+#userInput {
+    /* to maintain chatblock and input section ratio */
+    width: 75%;
+}
+
+.input-box {
+    /* To iinput message */
+    float: left;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    background-color: white;
+    outline: none
+}
+
+.userText {
+    /* to define the text i.e. inside when we send the message */
+    color: white;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+}
+
+.userText span {
+    /* to define the box on the outside of mesaage */
+    line-height: 1.5em;
+    display: inline-block;
+    background: #155f64;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    animation: floatup .5s forwards
+}
+
+.botText {
+    /* for bot messages */
+    color: #000;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+}
+
+.botText span {
+    /* for bot message container */
+    line-height: 1.5em;
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    animation: floatup .5s forwards/* animation for new text */
+}
+
+@keyframes floatup {
+    /* Custom Animation */
+    from {
+        transform: translateY(14px);
+        opacity: .0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:600px) {
+    /* for website responsiveness in diff devices */
+    .full-chat-block {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .chat-bar-collapsible {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    .collapsible {
+        width: 100%;
+        border: 0px;
+        border-top: 3px solid white;
+        border-radius: 0px;
+    }
+}

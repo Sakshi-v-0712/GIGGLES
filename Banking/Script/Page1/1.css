@@ -1,0 +1,212 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+input,
+textarea {
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1509017174183-0b7e0278f1ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
+    background-position: left;
+    background-size: cover;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 77px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+}
+
+h7 {
+    margin-left: 0px;
+    margin-right: 800px;
+}
+
+#logo {
+    width: 40px;
+}
+
+.menu-item {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.dropdown-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-wrapper:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    width: 150px;
+    border-top: 2px solid #22524e;
+    padding: 20px;
+    position: absolute;
+    right: 24px;
+    background-color: rgb(219, 250, 242);
+    box-shadow: 0 2px 5px #ccc;
+    display: none;
+}
+
+.dropdown a {
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.dropdown a:last-of-type {
+    border: 0;
+}
+
+.menu-item i {
+    padding-left: 4px;
+}
+
+.primary-button {
+    font-size: 13px;
+    font-weight: 650;
+    color: white;
+    background-color: rgb(13, 64, 68);
+    padding: 10px 35px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#landing-section {
+    width: 100%;
+    height: 100vh;
+}
+
+#main-text-wrapper {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-text-wrapper h1 {
+    width: 92%;
+    max-width: 1100px;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+}
+
+#main-text-wrapper p {
+    width: 100%;
+    max-width: 1100px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: rgb(241, 245, 248);
+    text-align: center;
+    padding-top: 32px;
+}
+
+form {
+    text-align: left;
+    margin: 22px 27px 22px 27px;
+    scrollbar-width: none;
+    height: max-content;
+    font-weight: 700;
+}
+
+#Required {
+    font-size: 10px;
+}
+
+input {
+    width: 100%;
+    background-color: rgb(219, 250, 242);
+    color: black;
+    padding: 12px 30px;
+    box-sizing: border-box;
+    border: rgb(11, 51, 48);
+    border: width 20px;
+    border-radius: 4px;
+    margin: 15px 15px 15px 15px 15px;
+}
+
+input :focus {
+    background-color: rgb(75, 77, 77);
+    border: 3px solid #555;
+    color: whitesmoke;
+}
+
+fieldset {
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    background: rgb(219, 250, 242);
+    display: flexbox;
+    margin-inline-start: 1.0px;
+    margin-inline-end: 1.0px;
+    padding-block-start: 0.15em;
+    padding-inline-start: 0.35em;
+    padding-inline-end: 0.35em;
+    padding-block-end: 0.225em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(45, 99, 100);
+    border-image: initial;
+}
+
+#card_type {
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(219, 250, 242);
+}
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: #063d34;
+    border: rgb(240, 248, 255);
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50ex;
+}
+
+#btn-submit {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #232323;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 30px 0px;
+}
